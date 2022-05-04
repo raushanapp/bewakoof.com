@@ -24,8 +24,8 @@ export const Navbar=()=>{
     <div className="Navright">
        {/* <Link to={"./"}>offers</Link> */}
        <div className="alignself">
-       <span><SearchIcon /></span>
-       <input type="text" placeholder="Enter search"/>
+       <span className="icon"><SearchIcon /></span>
+       <input className="searchbox" type="text" placeholder="Enter search"/>
        </div>
        <Link className="no" to="/Home/login">Login</Link>
        <Link className="no" to="/Home/wishlist"><FavoriteIcon color="primary" fontSize="large"/></Link>
