@@ -1,5 +1,5 @@
 import React from "react"
-export const Mobile_cover=()=>{
+export const MobileCover=()=>{
     return <>
     mobileCover page
     </>
