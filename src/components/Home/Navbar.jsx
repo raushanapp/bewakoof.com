@@ -11,10 +11,9 @@ export const Navbar=()=>{
 
     
     <ul className="Navleft">
-       {/* <Link to={"./"}>offers</Link> */}
-       {/* <img src="https://freeiconshop.com/wp-content/uploads/edd/instagram-new-flat.png" alt="images" /> */}
-      
-        <Link className="no" to="/" >Home</Link> 
+    
+       {/* <img src="https://images.bewakoof.com/web/bewakoof-logo-white-1648550013.png" alt="bewakoof_logo" style="height: 18px; margin: 16px 0px; width: 132px;"> */}
+        <Link className="no" to="/" ><img src="https://images.bewakoof.com/web/bewakoof-logo-white-1648550013.png" alt="bewakoof-logo" /></Link> 
        <Link className="no" to="/Home/men">Men</Link>
        <Link className="no" to="/Home/women">Women</Link>
        <Link className="no" to="/Home/mobilecovers">Mobilecover</Link>
