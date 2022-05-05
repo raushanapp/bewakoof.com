@@ -14,9 +14,21 @@
    align-self: center;
    justify-content: space-between;
    margin-right: 250px;
+   margin-top: 40px;
 
 }
+.Navleft li{
+ /* margin-top: 60px; */
+ 
+  text-decoration: none;
+  color: black;
+  height: 40px;
+  list-style: none;
 
+};
+.Navleft li link{
+  text-decoration: none;
+}
 .no{
     text-decoration: none;
   align-self: center;
@@ -36,13 +48,13 @@
 
 }
 
-input{
+/* input{
     width: 350px;
     height: 30px;
     align-self: center;
     font-size: 20px;
-    background-color: lightgrey;
-}
+    
+} */
 .alignself{
     align-self: center;
 }
@@ -55,11 +67,16 @@ input{
 .icon {
   padding: 10px;
   min-width: 40px;
+  margin-left: -4px;
+  margin-right: 0px;
 }
 
 .searchbox{
-  width: 100%;
+  
+  width: 325px;
   height: 50%;
   padding: 10px;
   text-align: center;
+  background-color: lightgrey;
+  font-size: 16px;
 }

@@ -1,0 +1,54 @@
+.container{
+    width: 50%;
+    height: 400px;
+    
+    margin-left: -200px;
+    margin-top: 15px;
+    position: absolute;
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.container.clicked{
+    display: none;
+}
+.first-column{
+    width: 33%;
+}
+.second-column{
+    width: 33%;
+}
+.Third-column{
+    width: 33%;
+}
+.main-div{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+   
+    display: flex;
+    justify-content: space-around;
+   
+}
+.main-div li {
+    
+  color: darkgray;
+   cursor: pointer;
+   list-style-type: none;
+  
+}
+.main-div li:hover{
+    text-decoration: underline;
+}
+/* .Mobile-submenu li{
+margin-right: 100px;
+} */
+.submenu-item{
+    text-decoration: none;
+    
+}
+.div{
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
