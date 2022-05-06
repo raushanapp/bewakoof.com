@@ -8,7 +8,7 @@ export const DropdownWomen = () => {
   return (
     <>
       <div
-        className={dropdown ? "container clicked" : "container"}
+        className={dropdown ? "container clicked" : "navcontainer"}
         onClick={() => setDropdown(!dropdown)}
       >
         <div className="main-div">
