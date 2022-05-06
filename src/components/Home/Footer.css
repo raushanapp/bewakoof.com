@@ -37,9 +37,9 @@ container {
 
 }
 
-/* img {
+.footer-img {
     margin: 20px 10px 0 -30px;
-} */
+}
 
 footer {
     /* padding:  0; */
@@ -170,7 +170,7 @@ justify-content: space-evenly;
     background-color: #181818;
 }
 
-a{
+.hrbelow1 a{
     text-decoration: none;
 
     color: hsla(0,0%,100%,.9);
@@ -181,7 +181,27 @@ a{
     outline: none; 
     
 }
-p{
+.hrbelow2 a{
+    text-decoration: none;
+
+    color: hsla(0,0%,100%,.9);
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none; 
+}
+.hrbelow3 a{
+    text-decoration: none;
+
+    color: hsla(0,0%,100%,.9);
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none; 
+}
+.footer-p {
     color: hsla(0,0%,100%,.9                                                                                               );
     font-weight: bolder;
     font-size: larger;                             
