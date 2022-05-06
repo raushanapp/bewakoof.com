@@ -9,8 +9,9 @@ import { MobileCover } from './components/Home/MobileCover';
 import { Login } from './components/Home/Login';
 import { Wishlist } from './components/Home/Wishlist';
 import { Cart } from './components/Home/Cart';
-// import { Cart } from './components/cart/Cart';
-// import { Test } from './components/Test';
+import {Footer} from './components/Home/Footer'
+
+
 function App() {
   return (
     <div className="App">
@@ -24,10 +25,11 @@ function App() {
         <Route path='/Home/login' element={<Login/>}></Route>
         <Route path='/Home/wishlist' element={<Wishlist/>}></Route>
         <Route path='/Home/cart' element={<Cart/>}></Route>
-     
+//           <Route path='/Home/footer'  element={<Footer/>}></Route>
+
         
       </Routes>
-    
+    <Footer/>
     </div>
   );
 }

@@ -1,0 +1,80 @@
+.cancelprice {
+  text-decoration: line-through;
+  font-family: "montserrat", sans-serif;
+  color: #555555;
+  opacity: 70%;
+}
+.pricetribe {
+  background-color: rgb(228, 225, 225);
+  color: rgb(136, 135, 135);
+  font-family: "montserrat", sans-serif;
+  padding-left: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.ProductMain {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  /* border: 2px solid red; */
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "montserrat", sans-serif;
+}
+.ProducImage img {
+  width: 100%;
+  border-radius: 10px;
+}
+.ProductDescription {
+  width: 100%;
+  font-family: "montserrat", sans-serif;
+  padding: 5px;
+}
+.productwishicon {
+  position: absolute;
+  font-size: 30px;
+  right: 4%;
+  top: 2%;
+}
+.productwishicon:hover {
+  font-size: 35px;
+}
+.ProducImage {
+  position: relative;
+  width: 100%;
+}
+.ProductCartButton button {
+  border: none;
+  background-color: #75e0e0;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left: 14px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.ProductCartButton button:hover {
+  padding: 4px;
+}
+.Producttitle {
+  font-size: 12px;
+  color: #000000;
+  opacity: 90%;
+  line-height: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.ProductPrice {
+  color: #2d2d2d;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
