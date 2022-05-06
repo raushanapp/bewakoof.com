@@ -15,7 +15,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Gender</Typography>
+          <Typography className='Accodtitle'>Gender</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -31,7 +31,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Sizes</Typography>
+          <Typography className='Accodtitle' >Sizes</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -55,7 +55,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Fit</Typography>
+          <Typography className='Accodtitle'>Fit</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -75,7 +75,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Ratings</Typography>
+          <Typography className='Accodtitle'>Ratings</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -93,7 +93,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Discount</Typography>
+          <Typography className='Accodtitle'>Discount</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -114,7 +114,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Sort By</Typography>
+          <Typography className='Accodtitle' >Sort By</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
