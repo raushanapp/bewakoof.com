@@ -25,11 +25,11 @@ function App() {
         <Route path='/Home/login' element={<Login/>}></Route>
         <Route path='/Home/wishlist' element={<Wishlist/>}></Route>
         <Route path='/Home/cart' element={<Cart/>}></Route>
-          <Route path='/Home/footer'  element={<Footer/>}></Route>
+//           <Route path='/Home/footer'  element={<Footer/>}></Route>
 
         
       </Routes>
-    
+    <Footer/>
     </div>
   );
 }
