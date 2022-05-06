@@ -25,7 +25,6 @@ function App() {
         <Route path='/Home/wishlist' element={<Wishlist/>}></Route>
         <Route path='/Home/cart' element={<Cart/>}></Route>
      
-        
       </Routes>
     
     </div>
