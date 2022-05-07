@@ -517,10 +517,24 @@
     }
   ],
   "cart": [
-    
+    {
+      "product_id": "1",
+      "productimage_url": "https://images.bewakoof.com/t540/modern-noise-red-checks-shirts-427965-1636955546-1.jpg",
+      "productprice": "699",
+      "productname": "Black Full Sleeve Shirt",
+      "productcancelprice": "1399",
+      "id": 1
+    }
   ],
   "whishlist": [
-    
-    
+    {
+      "product_id": "1",
+      "productimage_url": "https://images.bewakoof.com/t540/modern-noise-red-checks-shirts-427965-1636955546-1.jpg",
+      "productprice": "699",
+      "productname": "Black Full Sleeve Shirt",
+      "productcancelprice": "1399",
+      "producttribe": "₹ 719 For TriBe Members",
+      "id": 1
+    }
   ]
 }
