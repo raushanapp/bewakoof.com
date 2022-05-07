@@ -2,7 +2,6 @@
 footerContainer {
     width: 100%;
 
-
 }
 
 .row {
@@ -15,6 +14,7 @@ footerContainer {
 
 .col {
     width: 100%;
+    margin-top: 50px;
     /* height: 75%; */
 }
 .col1 li{
