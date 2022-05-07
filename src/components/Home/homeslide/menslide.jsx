@@ -2,13 +2,20 @@ import React from "react"
 import {Men} from "../Men"
 import { Women } from '../Women';
 import { MobileCover } from '../MobileCover';
-
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./menslide.css"
+
 export const Menslide=()=>{
+    const divnav=useNavigate()
+    const hendleclick =()=>{
+
+divnav("./Home/Men")
+    }
     return <>
  
-    <div className="slide1">
-        <div className="slide1div" >
+    <div onClick={hendleclick} className="slide1">
+       < div className="slide1div" >
          <img src="https://images.bewakoof.com/uploads/grid/app/1x1-buy2fr599-m-1651329455.jpg" alt="Non" />
         </div>
         <div className="slide1div" >
@@ -26,12 +33,12 @@ export const Menslide=()=>{
         
     </div>
 
-    <div className="slide2">
-        <img src="https://images.bewakoof.com/uploads/grid/app/desktop-strip-2-1651232973.jpg" alt="err" />
+    <div  onClick={hendleclick} className="slide2">
+        < img src="https://images.bewakoof.com/uploads/grid/app/desktop-strip-2-1651232973.jpg" alt="err" />
 
     </div>
 
-    <div className="slide3">
+    <div  onClick={hendleclick} className="slide3">
         <div className="smallgridimage">
             <img src="https://images.bewakoof.com/uploads/grid/app/WhatsApp-Video-2022-01-29-at-14-06-03-1643446784.gif" alt="" />
             <h4>Design Of The Day</h4>
@@ -74,7 +81,7 @@ export const Menslide=()=>{
        
     </div>
 
-    <div className="slide4">
+    <div  onClick={hendleclick} className="slide4">
         <div className="slide4d1">
             EXCLUSIVE FOR YOU
         </div>
@@ -82,7 +89,7 @@ export const Menslide=()=>{
             <img src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png" alt="" /> </div>
     </div>
 
-    <div className="slide5">
+    <div  onClick={hendleclick} className="slide5">
         <div className="slide5div"><img src="https://images.bewakoof.com/uploads/grid/app/Winterwear-Men-3x3-homepage-grid-new-1645686265.jpg" alt="" />
         
        </div>
@@ -122,7 +129,7 @@ export const Menslide=()=>{
        
     </div>
 
-    <div className="slide6">
+    <div  onClick={hendleclick} className="slide6">
         <div className="slide6div"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-buy2-get1-1651235310.jpg" alt="" /></div>
 
         <div className="slide6div"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-play-1651235311.jpg" alt="" /></div>
@@ -133,7 +140,7 @@ export const Menslide=()=>{
         <div className="slide7divt"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Boxers-Men-AOP-boxers-1651734120.jpg" alt="" /></div>
     </div>
 
-    <div className="slide8" >
+    <div  onClick={hendleclick} className="slide8" >
         <div className="slide8div"><img src="https://images.bewakoof.com/t320/paradise-half-sleeve-t-shirt-495687-1651502605-1.jpg" alt="" />
 
         <h4>299₹</h4></div>
@@ -152,14 +159,14 @@ export const Menslide=()=>{
         
     </div>
 
-    <div className="slide9">
+    <div  onClick={hendleclick} className="slide9">
         <div className="slide9div"><img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-New-Printed-Tshirts-Men-1651638288.jpg" alt="" /></div>
         <div className="slide9div"><img src="https://images.bewakoof.com/uploads/grid/app/DOTD-Homepage-Men-new-1651479092.jpg" alt="" /></div>
         <div className="slide9div"><img src="https://images.bewakoof.com/uploads/grid/app/1x1Banner-static-OfficialMerch-characters2-1651235308.jpg" alt="" /></div>
 
     </div>
 
-    <div className="slide10">
+    <div  onClick={hendleclick} className="slide10">
         <div>THE STOOPID COLLECTION</div>
         <div className="slide10imgdiv">
             <div className="sl10im"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-IPL-Men-IPL--1--1651325711.jpg" alt="" /></div>
@@ -167,7 +174,7 @@ export const Menslide=()=>{
         </div>
     </div>
 
-    <div className="slide11">
+    <div  onClick={hendleclick} className="slide11">
         <div className="slide11div"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-men-solid-joggers-1651549356.jpg" alt="" /></div>
         <div className="slide11divt"><img src="https://images.bewakoof.com/uploads/grid/app/Harry-Potter-Men-mid-banner--1651490977.jpg" alt="" /></div>
     </div>

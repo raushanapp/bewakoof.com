@@ -1,13 +1,16 @@
 import React from "react"
-import "./menslide.css"
+import "./menslide.css";
+import { useNavigate } from "react-router-dom";
+import { Women } from '../Women';
 export const Womenslide=()=>{
+const wocli=useNavigate();
+    const womenclick =()=>{
+        wocli("./Home/Women")
+    }
     return <>
  
 
-
-
- 
-    <div className="slide1">
+    <div onClick={womenclick} className="slide1">
         <div className="slide1div" >
          <img src="https://images.bewakoof.com/uploads/grid/app/1x1-boyfriendtees-w-1651235305.jpg" />
         </div>
@@ -20,18 +23,18 @@ export const Womenslide=()=>{
 
         </div>
         <div className="slide1div" >
-            <img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Summer-Collection-Women-1651763874.giftic-Banner-1-1-Summer-Collection-Men-1651642981.gif" alt="" />
+            <img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Summer-Collection-Women-1651763874.gif" alt="" />
 
         </div>
         
     </div>
 
-    <div className="slide2">
+    <div onClick={womenclick} className="slide2">
         <img src="https://images.bewakoof.com/uploads/grid/app/desktop-strip-1-1651232973.jpg" alt="err" />
 
     </div>
 
-    <div className="slide3">
+    <div onClick={womenclick} className="slide3">
         <div className="smallgridimage">
             <img src="https://images.bewakoof.com/uploads/grid/app/WhatsApp-Video-2022-01-29-at-14-06-03-1643446784.gif" alt="" />
             <h4>Design Of The Day</h4>
@@ -74,7 +77,7 @@ export const Womenslide=()=>{
        
     </div>
 
-    <div className="slide4">
+    <div onClick={womenclick} className="slide4">
         <div className="slide4d1">
             EXCLUSIVE FOR YOU
         </div>
@@ -82,7 +85,7 @@ export const Womenslide=()=>{
             <img src="https://images.bewakoof.com/uploads/grid/app/ticker-banner1440x150-spend999-1651757321.gif" alt="" /> </div>
     </div>
 
-    <div className="slide5">
+    <div onClick={womenclick} className="slide5">
         <div className="slide5div"><img src="https://images.bewakoof.com/uploads/grid/app/3x3-homepage-grid-0005-Boyfriend-T-shirts-1644388428.jpg" alt="" />
         
        </div>
@@ -122,18 +125,18 @@ export const Womenslide=()=>{
        
     </div>
 
-    <div className="slide6">
+    <div onClick={womenclick} className="slide6">
         <div className="slide6div"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-buy2-get1-1651235310.jpg" alt="" /></div>
 
         <div className="slide6div"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Plus-Size-Women-1651766785.jpg" alt="" /></div>
     </div>
 
-    <div className="slide7">
+    <div onClick={womenclick} className="slide7">
         <div className="slide7div"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-colorblock-joggers-w-1651821088.jpg" alt="" /></div>
         <div className="slide7divt"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Ribbed-Pants-Women-1651746638.jpg" alt="" /></div>
     </div>
 
-    <div className="slide8" >
+    <div onClick={womenclick} className="slide8" >
         <div className="slide8div"><img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Kurtis-Women-1651235314.jpg" alt="" />
 
         <h4>299₹</h4></div>
@@ -152,14 +155,14 @@ export const Womenslide=()=>{
         
     </div>
 
-    <div className="slide9">
+    <div onClick={womenclick} className="slide9">
         <div className="slide9div"><img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Kurtis-Women-1651235314.jpg" alt="" /></div>
         <div className="slide9div"><img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-New-Printed-Tshirts-Women-1651638288.jpg" alt="" /></div>
         <div className="slide9div"><img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Printed-Tshirts-Women-2-1651235315.jpg" alt="" /></div>
 
     </div>
 
-    <div className="slide10">
+    <div onClick={womenclick} className="slide10">
         <div>THE STOOPID COLLECTION</div>
         <div className="slide10imgdiv">
             <div className="sl10im"><img src="https://images.bewakoof.com/uploads/grid/app/Star-Wars----Women-mid-banner--1651661614.gif" alt="" /></div>
@@ -167,7 +170,7 @@ export const Womenslide=()=>{
         </div>
     </div>
 
-    <div className="slide11">
+    <div onClick={womenclick} className="slide11">
         <div className="slide11div"><img src="https://images.bewakoof.com/uploads/grid/app/Harry-Potter-Women-mid-banner--1651490977.jpg" alt="" /></div>
         <div className="slide11divt"><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-AOP-Joggers-Women-1651381076.jpg" alt="" /></div>
     </div>
