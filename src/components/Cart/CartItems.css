@@ -1,0 +1,31 @@
+.cartItems{
+    width: 54%;
+    height: 1200px;
+    border: 1px solid;
+}
+.mainDiv{
+    width: 90%;
+    height: 900px;
+    border: 1px solid;
+  margin-left: 10%;
+}
+.yaydiv{
+    width: 100%;
+    height: 70px;
+    border: 1px solid;
+    margin-top: 40px;
+    background-color: lightyellow;
+    display: flex;
+    border-radius: 10px;
+}
+.text-yaydiv{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.text-yaydiv2{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}

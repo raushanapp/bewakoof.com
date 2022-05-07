@@ -76,7 +76,7 @@ export const Navbar = () => {
           <Link className="no" to="/Home/wishlist">
             <FavoriteIcon color="primary" fontSize="large" />
           </Link>
-          <Link className="no" to="./Home/cart">
+          <Link className="no" to="./Cart/cart">
             <ShoppingBagIcon color="primary" fontSize="large" />
           </Link>
         </div>

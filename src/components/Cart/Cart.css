@@ -1,0 +1,6 @@
+.mainCart{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    border: 1px solid;
+}
