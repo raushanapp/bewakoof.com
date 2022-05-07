@@ -1,0 +1,16 @@
+.homecompnavcss{
+    display: flex;
+    height: 30px;
+    width: 40%;
+    justify-content: space-around;
+    margin-top: 100px;
+   
+    margin: auto;
+    padding: 2%;
+    font-size: 30px;
+    text-decoration: none;
+}
+.homecomplink{
+    text-decoration: none;
+    cursor: pointer;
+}
