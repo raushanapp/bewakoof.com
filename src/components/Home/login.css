@@ -1,34 +1,33 @@
-.container {
+.Zcontainer {
     /* border: 1px solid red; */
     display: flex;
-    margin: auto;
-    /* margin-top: 10px; */
+    margin-top: 10px;
 }
 
-.container > div {
-    border: 1px solid black;
+.Zcontainer > div {
+    /* border: 1px solid black; */
     margin-right: 20px;
     margin-top: 20px;
     width: 50%;
 }
 
-.img_div > img {
+.Zimg_div > img {
     height: 560px;
     width: 400px;
 }
 
-.img_div{
+.Zimg_div{
     background-color: #fff7d7;
     font-family: montserrat-bold, sans-serif;
     font-style: normal;
     text-align: center;
 }
 
-.login_div{
+.Zlogin_div{
     text-align: center;
 }
 
-.login_div > p {
+.Zlogin_div > p {
     color: #A0A0A0;
     font-family: montserrat-bold, sans-serif;
     font-size: 18px;
@@ -37,7 +36,7 @@
     word-spacing: 2px;
 }
 
-.form {
+.Zform {
     border: 1px solid transparent;
     width: 450px;
     margin: auto;
@@ -45,9 +44,9 @@
 
 }
 
-.social_button {
+.Zsocial_button {
     display: flex;
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 402px;
     margin: auto;
     width: 60%;

@@ -9,6 +9,7 @@ import { MobileCover } from './components/Home/MobileCover';
 import { Login } from './components/Home/Login';
 import { Wishlist } from './components/Home/Wishlist';
 import { Cart } from './components/Home/Cart';
+import { Signup } from './components/Home/Signup';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Route path='/Home/login' element={<Login/>}></Route>
         <Route path='/Home/wishlist' element={<Wishlist/>}></Route>
         <Route path='/Home/cart' element={<Cart/>}></Route>
-     
+        <Route path='/signup' element={<Signup/>}></Route>
       </Routes>
     
     </div>

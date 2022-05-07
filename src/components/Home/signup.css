@@ -1,0 +1,15 @@
+.signup_box{
+    border: 1px solid red;
+    width: 480px;
+    height: 550px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.signup_box > div {
+    /* border: 1px solid black; */
+    /* width: 290px; */
+    margin-left: 45px;
+    margin-top: 20px;
+    height: 465px;
+}
