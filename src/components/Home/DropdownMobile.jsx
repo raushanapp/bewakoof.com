@@ -8,7 +8,7 @@ export const DropdownMobile = () => {
   return (
     <>
       <div
-        className={dropdown ? "container clicked" : "container"}
+        className={dropdown ? "navcontainer clicked" : "navcontainer"}
         onClick={() => setDropdown(!dropdown)}
       >
         <div className="main-div">
