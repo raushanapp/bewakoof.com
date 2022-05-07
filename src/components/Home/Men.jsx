@@ -2,67 +2,96 @@ import "./Men.css";
 import React, { useEffect, useState } from "react";
 import SimpleAccordion from "./SimpleAccordion";
 import { Product } from "./Product";
+import axios from "axios";
+import { AiOutlineHeart } from "react-icons/ai";
 export const Men = () => {
-  
   const [mens, setMens] = useState([]);
-  
-  // const [cartItems,setCartItems] = useState([]);
+
+  // const [cartItems, setCartItems] = useState([]);
 
   const getUser = async () => {
-    const response = await fetch("https://bewakoof-projects.herokuapp.com/men");
+    const response = await fetch("http://localhost:8080/Mens");
     const data = await response.json();
-    setMens(data.product);
-    // console.log(data.product);
+    setMens(data);
   };
 
   useEffect(() => {
     getUser();
-  });
+  }, []);
 
-  
-  
-  // const onAdd =(mens) =>{
+  const add = (e) => {
+    const cartData = {
+      product_id: e.id,
+      productimage_url: e.image,
+      productprice: e.price,
+      productname: e.name,
+      productcancelprice:e.canceledprice
+    };
+    axios.post(`http://localhost:8080/cart`, cartData);
+    alert("id");
+    console.log(cartData);
+  };
 
-  //   const exist = cartItems.find((x)=> x.id === mens.id);
+  const Whislist = (e) => {
+    const WhislistData = {
+      product_id: e.id,
+      productimage_url: e.image,
+      productprice: e.price,
+      productname: e.name,
+      productcancelprice:e.canceledprice,
+      producttribe:e.tribe
 
-  //   if(exist){
-  //     setCartItems(
-  //       cartItems.map((x)=>
-  //         x.id === mens.id ? {...exist , qty:exist.qty+1}:x
-  //       )
-  //     );
-  //   }else{
-  //     setCartItems([...cartItems,{...mens,qty:1}])
-  //   }
-  // }
-  
-
+    };
+    axios.post(`http://localhost:8080/whishlist`, WhislistData);
+    alert("id");
+    console.log(WhislistData);
+  };
 
   return (
     <div>
       <h1 className="Menshead">Men Clothing</h1>
-      <span></span>
       <div className="Mensmain">
         <div className="Mensright">
           <SimpleAccordion />
         </div>
         <div className="Mensleft">
-          {mens.map((el, id) => {
+          {mens.map((e, id) => {
             return (
-              <Product key={id}
-                productimage_url={el.image}
-                productname={el.name}
-                productprice={el.price}
-                productcancelprice={el.canceledprice}
-                producttribe={el.tribe}
-              />
-              
+              <div className="MensDiv" key={id}>
+                <Product
+                  product_id={e.id}
+                  productimage_url={e.image}
+                  productname={e.name}
+                  productprice={e.price}
+                  productcancelprice={e.canceledprice}
+                  producttribe={e.tribe}
+                />
+                <div className="Mens_cart_whish_div">
+                  <div className="mens_cart_btn">
+                    <button
+                      onClick={() => {
+                        add(e);
+                      }}
+                    >
+                      Add
+                    </button>
+                  </div>
+
+                  <div >
+                    <AiOutlineHeart className="mens_whishlist_btn"
+                      onClick={() => {
+                        Whislist(e);
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
             );
           })}
-         
         </div>
-        
       </div>
     </div>
   );
 };
+
+// https://bewakoof-projects.herokuapp.com/men

@@ -12,20 +12,15 @@
     
 }
 .Womensright{
-    /* border: 2px solid rgb(255, 0, 170);  */
+
     width: 30%;
 }
 .Womensleft{
-    /* border: 2px solid rgb(229, 255, 0); */
-    width: 68%;
+ 
+    max-width: 70%;
     padding: 2%;
     display: flex;
     flex-direction: row;
-     flex-wrap: wrap;
-     gap: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-/* .Womensleftcard{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
-} */

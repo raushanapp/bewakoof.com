@@ -1,6 +1,6 @@
-import React ,{useState} from "react";
+import React from "react";
 import "./Product.css";
-import { AiOutlineHeart } from "react-icons/ai";
+// import { AiOutlineHeart } from "react-icons/ai";
 
 export const Product = ({
   productimage_url,
@@ -8,15 +8,18 @@ export const Product = ({
   productprice,
   productcancelprice,
   producttribe,
+  product_id
 }) => {
-  
+
+
+
   return (
     <div className="ProductMain ">
       <div className="ProducImage">
-        <img src={productimage_url} alt="img"/>
-        <span className="productwishicon">
+        <img src={productimage_url} alt="img" />
+        {/* <span className="productwishicon">
           <AiOutlineHeart />
-        </span>
+        </span> */}
       </div>
       <div className="ProductDescription">
         <div className="Producttitle">{productname} </div>
@@ -26,9 +29,11 @@ export const Product = ({
         </div>
         <div className="pricetribe">
           {producttribe}
-          <div><span className="ProductCartButton">
-          <button>Add to Cart</button>
-         </span></div>
+          {/* <div>
+            <span className="ProductCartButton">
+              <button>Add to Cart</button>
+            </span>
+          </div> */}
         </div>
       </div>
     </div>

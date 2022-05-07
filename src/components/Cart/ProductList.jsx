@@ -1,15 +1,23 @@
 import "./ProductList.css";
-export const ProductList = () => {
-  return (
+import React from "react";
+export const ProductList = ({
+  cart_id,
+      cart_image,
+      cart_title,
+      cart_price,
+      cart_canclprice
+}) => {
+  
+return (
     <div className="Productdiv">
       <div className="text-img">
         <div className="texts">
           <div className="title">
-            Striped Captain America Printed Badge Full Sleeve T-Shirt (AVL)
+            {cart_title}
           </div>
           <div className="price">
-            <div className="original-price">{`₹${200}`}</div>
-            <div className="strikedoff-price">{`₹${599}`}</div>
+            <div className="original-price">{cart_price}</div>
+            <div className="strikedoff-price">{cart_canclprice}</div>
           </div>
           <div className="saved">You saved {`₹${324}!`}</div>
 
@@ -36,10 +44,8 @@ export const ProductList = () => {
               <option value="10">10</option>
           </select>
         </div>
-        <img
-          className="image-tag"
-          src="https://images.bewakoof.com/t320/striped-captain-america-printed-badge-full-sleeve-t-shirt-avl-234126-1637995495-1.jpg"
-          alt="image"
+        <img className="cart_image" src={cart_image}
+          alt="cart"
         />
       </div>
       <button className="remove-btn">Remove</button>

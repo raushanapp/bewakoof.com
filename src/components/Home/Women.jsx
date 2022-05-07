@@ -1,20 +1,53 @@
 import React, { useEffect, useState } from "react";
 import SimpleAccordion from "./SimpleAccordion";
 import "./Women.css"
+import axios from "axios";
 import { Product } from "./Product"
+import { AiOutlineHeart } from "react-icons/ai";
 export const Women=()=>{
     
     const [womens ,setWomens] = useState([])
 
     let getData = async()=>{
-        let response = await fetch("https://bewakoof-projects.herokuapp.com/women")
+        let response = await fetch("http://localhost:8080/womens")
         let data = await response.json();
-        setWomens(data.women)
+        setWomens(data)
+        // console.log(data)
     }
      
     useEffect(()=>{
         getData();
-    })
+    },[])
+
+
+    const add= (e)=>{
+     
+        const cartData={
+          product_id:e.id,
+          productimage_url:e.image,
+          productprice:e.price,
+          productname:e.name
+        }
+        axios.post(`http://localhost:8080/cart`,cartData);
+        alert("id")
+        console.log(cartData);
+      }
+
+      const Whislist= (e)=>{
+     
+        const WhislistData={
+          product_id:e.id,
+          productimage_url:e.image,
+          productprice:e.price,
+          productname:e.name
+        }
+        axios.post(`http://localhost:8080/whishlist`,WhislistData);
+        alert("id")
+        console.log(WhislistData);
+      }
+
+
+
 
     return (
         <div>
@@ -25,15 +58,41 @@ export const Women=()=>{
         </div>
         <div className="Womensleft">
         
-        {womens.map((el,id)=>{
-            return(
-                <Product key={id} productimage_url={el.image}
-                productname={el.name}
-                productprice={el.price}
-                productcancelprice={el.canceledprice}
-                producttribe={el.tribe}/>
-            )
-        })}
+        {womens.map((e,id)=>{
+             return (
+                <div className="MensDiv" key={id}>
+                 <Product 
+                   product_id={e.id}
+                   productimage_url={e.image}
+                   productname={e.name}
+                   productprice={e.price}
+                   productcancelprice={e.canceledprice}
+                   producttribe={e.tribe}
+   
+                   />
+               <div className="Mens_cart_whish_div">
+                  <div className="mens_cart_btn">
+                    <button
+                      onClick={() => {
+                        add(e);
+                      }}
+                    >
+                      Add
+                    </button>
+                  </div>
+
+                  <div >
+                    <AiOutlineHeart className="mens_whishlist_btn"
+                      onClick={() => {
+                        Whislist(e);
+                      }}
+                    />
+                  </div>
+                </div>
+                
+                </div>
+               );
+             })}
         
 
         </div>
@@ -42,3 +101,7 @@ export const Women=()=>{
     )
     
 }
+
+
+
+// https://bewakoof-projects.herokuapp.com/women
