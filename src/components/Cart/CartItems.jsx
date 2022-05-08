@@ -3,8 +3,9 @@ import React,{useState , useEffect} from "react";
 import { ProductList } from "./ProductList";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 
+
 export const CartItems = () => {
-  
+
   
   
   const [cart ,setCart] = useState([])
@@ -44,7 +45,9 @@ export const CartItems = () => {
       .then((res) => {
         res.json().then((ress) => {
           //  console.log(ress)
+          
           getUser();
+         
         });
       })
       .catch((error) => {

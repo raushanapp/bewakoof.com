@@ -8,36 +8,35 @@
 }
 
 .lower_box{
-    background-color: #fddc6f;
-  
-}
-.forspaceinuppayment{
-    height: 100px;
-
+    background-color: #ffe48c;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .mainheadrow{
     height: 35px;
     margin-top: 1%;
     margin-left: 12%;
-    /* border: 1px solid red; */
+    /* border: 5px solid red; */
     display: flex;
 }
 
 .ainheadrow  img {
-    width: 50%
+    width: 50%;
+    /* border: 5px solid red; */
 }
 
 .mainheadrow > :nth-child(2) {
     margin-left: 60%;
     margin-top: -2%;
     font-weight: 100px;
+    /* border: 5px solid red; */
 }
 
 
 .middle_box {
     margin-top: 2.5%;
     margin-left: 12%;
+    /* border: 5px solid red; */
 }
 /* .lower_box_left>div{
     background-color: aqua;
@@ -45,26 +44,29 @@
 
 .ay {
     margin-left: 40%;
+    /* border: 5px solid red; */
 }
 
 .lower_box {
     margin-top: 2%;
     margin-left: 12%;
     display: flex;
-    border: 1px solid rgb(167, 244, 241);
+    /* border: 1px solid rgb(167, 244, 241); */
     width: 47%;
     min-height: 550px;
     margin: auto;
+    /* border: 5px solid red; */
 }
 
 .lower_box > div:nth-child(1) {
     width: 50%;
-    background-color: rgb(61, 232, 255);
-    color: #000;
+    background-color: #0ba0a0;
+    color: rgb(14, 13, 13);
+    font-size: larger;
     line-height: normal;
     cursor: pointer;
-    font-size: 12px;
     font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     
 }
 
@@ -82,7 +84,7 @@
     background-color: white;
     padding-top: 15px;
     padding-bottom: 13px;
-    border-left: 6px solid #42a2a2;
+    border-left: 6px solid #0ba0a0;
 }
 
 .lower_box_left>p {
@@ -90,7 +92,7 @@ margin-top: -9px;
 font-weight: 100;
 font-size: 10px;
 margin-left: 13px;
-color: rgb(112, 112, 112);
+color: rgb(250, 248, 248);
 letter-spacing: .2px;
 padding-top: 2px;
 }
@@ -98,7 +100,7 @@ padding-top: 2px;
 .lower_right_box {
     width: 78%;
     margin-left: 30px;
-    border: 1px solid rgb(157, 161, 160);
+    /* border: 1px solid rgb(157, 161, 160); */
     padding: 20px;
     margin-top: 12%;
     border-radius: 5px;
@@ -120,7 +122,7 @@ padding-top: 2px;
     height: 35px;
     border-radius: 5px;
     letter-spacing: 0.8px;
-    border: 0.1px solid rgb(161, 157, 157);
+    /* border: 0.1px solid rgb(161, 157, 157); */
 }
 
 .card_name > input {
@@ -129,12 +131,13 @@ padding-top: 2px;
     border-radius: 5px;
     letter-spacing: 0.8px;
     margin-top: 20px;
-    border: 0.1px solid rgb(161, 157, 157);
+    /* border: 0.1px solid rgb(161, 157, 157); */
 }
 
 .card_expiry_cvv {
     display: inline-block;
-    display: flex;
+    margin-right: 20px;
+    /* border: 1px solid red; */
 }
 
 .card_expiry_cvv > input {
@@ -143,7 +146,8 @@ padding-top: 2px;
     border-radius: 5px;
     letter-spacing: 0.5px;
     margin-top: 20px;
-    border: 0.1px solid rgb(161, 157, 157);
+   
+    /* border: 0.1px solid rgb(161, 157, 157); */
 }
 
 .card_check_box {
@@ -168,10 +172,11 @@ padding-top: 2px;
     width: 330px;
     height: 50px;
     color: white;
-    background-color: rgb(14, 204, 163);
+    background-color: #0ba0a0;
     font-size: 20px;
     border: 0.1px solid rgb(212, 203, 203); 
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     
 }
 

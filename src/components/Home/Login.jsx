@@ -21,6 +21,13 @@ export const Login = () => {
   };
 
   const handleLogin = (mobileNumber) => {
+    console.log("mobile",mobileNumber)
+    if(mobileNumber===""){
+      return alert("mobile number cannot be empty")
+    }
+    else{
+
+    
     axios
       .post("https://bewakoof-projects.herokuapp.com/number", {
         mobileNumber: mobileNumber,
@@ -32,12 +39,17 @@ export const Login = () => {
           handleAuth(true)
             navigate(-2 ,{replace:true})
         }
-        navigate("/");
+        else{
+          navigate("/signup");
+        }
+        
+        // 
       })
       .catch((e) => {
         // console.log(e.message);
         navigate("/signup");
       });
+    }
   };
 
   return (
