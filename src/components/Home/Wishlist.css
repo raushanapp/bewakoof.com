@@ -1,89 +1,71 @@
-
-.wishlisth2{
+.wishlisth2 {
     margin: 50px 0 30px 80px;
-    color: rgba(0,0,0,.8);
-    font-family: montserrat-bold,sans-serif;
+    color: rgba(0, 0, 0, .8);
+    font-family: montserrat-bold, sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
     text-align: left;
 }
-.wishnew{
-  /* margin-top: 30px; */
-  width:90%;
+.wishnew {
+    width: 90%;
     margin: auto;
-
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
 
 }
-
-
-
-.wishlistdiv1{
-    /* border: 2px solid black; */
-     
-    
-}
-
-.wishlistImage{
+.wishlistImage {
     width: 100%;
-height: 75%;
-/* border: 2px solid green; */
-
+    height: 75%;
 }
-.whislistTitle{
+.whislistTitle {
     margin: 0;
     text-align: left;
     font-size: 12px;
     letter-spacing: 0;
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, .8);
     height: 31px;
     padding-top: 5px;
     line-height: 13px;
     overflow: hidden;
 }
-.allPrice{
+.allPrice {
     display: flex;
 }
-.wishlistprice{
+
+.wishlistprice {
     font-weight: 700;
     font-size: 12px;
-    
+
 }
-.wishlistcutoffPrice{
-    
+.wishlistcutoffPrice {
+
     opacity: .6;
     font-size: 12px;
     text-decoration: line-through;
     line-height: normal;
-    
-
-}
-.wishlistdiscount{
+}.wishlistdiscount {
     opacity: .7;
     font-size: 12px;
     color: #08ba0d;
 }
-.tribeMemberPrice{
+.tribeMemberPrice {
     font-weight: 700;
     font-size: 12px;
-   margin: 3px 5px 0 0;
-   text-align: left;
-    
+    margin: 3px 5px 0 0;
+    text-align: left;
 }
-.tribeMemberText{
-    font-family: montserrat,sans-serif;
-    color: rgba(0,0,0,.81);
+.tribeMemberText {
+    font-family: montserrat, sans-serif;
+    color: rgba(0, 0, 0, .81);
     margin-top: 5px;
-    
     font-size: 11px;
 }
-.tribe{
-    display: flex ;
-    background-color: hsla(0,0%,92.9%,.6);
+.tribe {
+    display: flex;
+    background-color: hsla(0, 0%, 92.9%, .6);
 }
-.wishlistButton{
+.wishlistButton {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -92,28 +74,22 @@ height: 75%;
     height: 35px;
     width: 100%;
 }
-
-
-.deleteImage{
+.deleteImage {
     width: 20px;
     height: 20px;
     background: transparent;
 }
-
-.deleteImage:hover{
-    background-color: gray;
+.deleteImage:hover {
+    /* background-color: gray; */
     opacity: 0.7;
     width: 25px;
     height: 25px;
 }
-
-.delete_btn{
-    
-    border:none;
-    margin-left: -30px;
-    
-height: 40px;
-width: 40px;
-border-radius: 50%;
-background: transparent;
+.delete_btn {
+    border: none;
+    margin-left: -40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: transparent;
 }
