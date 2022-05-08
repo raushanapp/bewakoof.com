@@ -9,21 +9,20 @@
 }
 .wishnew{
   /* margin-top: 30px; */
-  width: 90%;
+  width:90%;
     margin: auto;
 
 display: grid;
-/* grid-template-rows: repeat(1,1fr); */
 grid-template-columns: repeat(4,1fr);
-grid-gap: 80px;
-/* border: 4px solid rgb(255, 0, 0); */
+grid-gap: 60px;
+
 }
 
 
 
 .wishlistdiv1{
     /* border: 2px solid black; */
-    height: 300px; 
+     
     
 }
 
@@ -98,6 +97,7 @@ height: 75%;
 .deleteImage{
     width: 20px;
     height: 20px;
+    background: transparent;
 }
 
 .deleteImage:hover{
