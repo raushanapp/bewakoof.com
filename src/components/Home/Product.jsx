@@ -8,7 +8,6 @@ export const Product = ({
   productprice,
   productcancelprice,
   producttribe,
-  product_id
 }) => {
 
 

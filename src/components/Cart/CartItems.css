@@ -1,13 +1,14 @@
 .cartItems{
     width: 54%;
-    height: 1200px;
-   border: 1px solid;
+    /* height: 1200px; */
+   /* border: 1px solid; */
 }
 .mainDiv{
     width: 90%;
-    height: 900px;
-   border: 1px solid;
-  margin-left: 10%;
+    /* height: 900px; */
+    /* border: 1px solid; */
+    margin: 5%;
+    padding: 10px;
 }
 .yaydiv{
     width: 100%;

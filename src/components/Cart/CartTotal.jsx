@@ -54,6 +54,7 @@ export const CartTotal = () => {
     setStrikedPrice(strikedPrice + sum);
     setActualPrice(actualPrice+add)
     console.log("striked", strikedPrice);
+    getUser();
   };
 
   useEffect(() => {
@@ -61,6 +62,8 @@ export const CartTotal = () => {
     return function clean(){
       console.log("cleaned")
     }
+    // setCartData(data);
+
   }, []);
 
   return (

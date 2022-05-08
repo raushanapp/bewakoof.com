@@ -31,7 +31,7 @@ export const Women=()=>{
           productcancelprice:e.canceledprice
         }
         axios.post(`http://localhost:8080/cart`,cartData);
-        alert("id")
+        // alert("id")
         console.log(cartData);
       }
 
@@ -45,7 +45,7 @@ export const Women=()=>{
           productcancelprice:e.canceledprice
         }
         axios.post(`http://localhost:8080/whishlist`,WhislistData);
-        alert("id")
+        // alert("id")
         console.log(WhislistData);
       }
 

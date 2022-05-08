@@ -19,7 +19,7 @@ export const Navbar = () => {
           <li>
             <Link className="no" to="/">
               <img
-                src="https://images.bewakoof.com/web/bewakoof-logo-white-1648550013.png"
+                src="https://user-images.githubusercontent.com/91020498/166910862-1cf541b0-a9a1-4223-8456-d20c1f8a4af3.png"
                 alt="bewakoof-logo"
               />
             </Link>
@@ -74,10 +74,10 @@ export const Navbar = () => {
             Login
           </Link>
           <Link className="no" to="/Home/wishlist">
-            <FavoriteIcon color="primary" fontSize="large" />
+            <FavoriteIcon className="icon-navbar" fontSize="large" />
           </Link>
           <Link className="no" to="./Cart/cart">
-            <ShoppingBagIcon color="primary" fontSize="large" />
+            <ShoppingBagIcon  className="icon-navbar"  fontSize="large" />
           </Link>
         </div>
       </div>

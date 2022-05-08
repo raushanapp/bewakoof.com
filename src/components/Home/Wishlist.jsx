@@ -1,6 +1,8 @@
 import React ,{useState,useEffect} from "react";
 import "./Wishlist.css";
-import {WishlistItems} from "../Home/WishlistItems"
+import axios from "axios";
+import { Product } from "./Product";
+import { AiFillDelete } from "react-icons/ai";
 export const Wishlist = () => {
   
   const [wish ,setWish] = useState([])
@@ -15,6 +17,40 @@ export const Wishlist = () => {
   useEffect(() => {
     getUser();
   }, []);
+
+
+  const add = (e,id) => {
+    const cartData = {
+      productimage_url: e.image,
+      productprice: e.price,
+      productname: e.name,
+      productcancelprice:e.canceledprice
+    };
+    axios.post(`http://localhost:8080/cart/${id}`, cartData);
+    alert("id");
+    console.log(cartData);
+  };
+
+  function remove(id){
+    fetch(`http://localhost:8080/whishlist/${id}`,{
+        method:'DELETE'
+    })
+    .then((res)=>{
+         res.json().then((ress)=>{
+          //  console.log(ress)
+            getUser();
+         })
+    })
+    .catch((error)=>{
+      console.log(error);
+    })
+
+  }
+
+
+
+
+
   
 return (
 <>
@@ -23,14 +59,35 @@ return (
         <div className="wishnew">
         {wish.map((e,id)=>{
   return(
-    <WishlistItems 
-    Wish_id={e.product_id}
-    Wish_image={e.productimage_url}
-    Wish_title={e.productname}
-    Wish_price={e.productprice}
-    Wish_canclprice={e.productcancelprice}
-    Wish_tribemember={e.producttribe}/>
-    )
+    <div className="MensDiv" key={id}>
+                <Product
+                 productimage_url={e.productimage_url}
+                 productname={e.productname}
+                 productprice={e.productprice}
+                 productcancelprice={e.productcancelprice}
+                 producttribe={e.producttribe}/>
+                
+                <div className="Mens_cart_whish_div">
+                  <div className="mens_cart_btn">
+                    <button
+                      onClick={() => {
+                        add(e.id);
+                      }}
+                    >
+                      Move to cart
+                    </button>
+                  </div>
+
+                  <div >
+                    <AiFillDelete className="mens_whishlist_btn"
+                      onClick={() => {
+                        remove(e.id);
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+            );
   })}
   </div>
       </div>

@@ -21,20 +21,18 @@ export const Men = () => {
 
   const add = (e) => {
     const cartData = {
-      product_id: e.id,
       productimage_url: e.image,
       productprice: e.price,
       productname: e.name,
       productcancelprice:e.canceledprice
     };
     axios.post(`http://localhost:8080/cart`, cartData);
-    alert("id");
+    // alert("id");
     console.log(cartData);
   };
 
   const Whislist = (e) => {
     const WhislistData = {
-      product_id: e.id,
       productimage_url: e.image,
       productprice: e.price,
       productname: e.name,
@@ -43,7 +41,7 @@ export const Men = () => {
 
     };
     axios.post(`http://localhost:8080/whishlist`, WhislistData);
-    alert("id");
+    // alert("id");
     console.log(WhislistData);
   };
 

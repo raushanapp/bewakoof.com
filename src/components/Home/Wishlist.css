@@ -8,10 +8,12 @@
 }
 .wishnew {
     width: 90%;
+    /* height: 500px; */
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 60px;
+    padding: 1%;
 
 }
 .wishlistImage {

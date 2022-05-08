@@ -1,7 +1,6 @@
 import "./ProductList.css";
 import React from "react";
 export const ProductList = ({
-  cart_id,
       cart_image,
       cart_title,
       cart_price,
@@ -48,8 +47,7 @@ return (
           alt="cart"
         />
       </div>
-      <button className="remove-btn">Remove</button>
-      <button className="wishlist-btn">Move to wishlist</button>
+      
     </div>
   );
 };

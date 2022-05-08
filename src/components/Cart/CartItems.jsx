@@ -36,6 +36,24 @@ export const CartItems = () => {
     getUser();
   }, []);
 
+
+  function remove(id) {
+    fetch(`http://localhost:8080/cart/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        res.json().then((ress) => {
+          //  console.log(ress)
+          getUser();
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+
+
   return (
     <div className="cartItems">
       <div className="mainDiv">
@@ -51,15 +69,23 @@ export const CartItems = () => {
           </div>
         </div>
         {cart.map((e,id)=>{
-    return(
-      <ProductList 
-      cart_id={e.product_id}
-      cart_image={e.productimage_url}
-      cart_title={e.productname}
-      cart_price={e.productprice}
-      cart_canclprice={e.productcancelprice}/>
-      
-      )
+     return (
+      <div>
+        <ProductList
+          cart_image={e.productimage_url}
+          cart_title={e.productname}
+          cart_price={e.productprice}
+          cart_canclprice={e.productcancelprice}
+        />
+
+        <div>
+          <button className="remove-btn"    onClick={() => {
+                  remove(e.id);
+                }}>Remove</button>
+          <button className="wishlist-btn">Move to wishlist</button>
+        </div>
+      </div>
+    );
     })}
       </div>
     </div>
