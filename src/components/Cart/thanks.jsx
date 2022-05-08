@@ -14,11 +14,14 @@ function Thanks(){
        clickho("/")
    }
     return(
+        <>
+    <div className="forupperspace"></div>
         <div className="thankscont">
             <h1>Thanks you for shoping from our website</h1>
 
             <button onClick={handlechangeclick} className="tahnksbutton">Home</button>
         </div>
+        </>
     )
 }
 
