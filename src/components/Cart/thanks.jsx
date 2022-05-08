@@ -19,7 +19,7 @@ function Thanks(){
         <div className="thankscont">
             <h1>Thanks you for shoping from our website</h1>
 
-            <button onClick={handlechangeclick} className="tahnksbutton">Home</button>
+            <button onClick={handlechangeclick} className="tahnksbutton">Continue Shopping</button>
         </div>
         </>
     )

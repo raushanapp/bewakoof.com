@@ -19,9 +19,9 @@ export const CartTotal = () => {
   };
   const handleClick = () => {
     // console.log("check",redeem.couponCode)
-    if (redeem.couponCode === "Masai30") {
+    if (redeem.couponCode.couponCode === "Masai30") {
       setCheck(true);
-      setActualPrice(Math.floor(actualPrice - discount * actualPrice));
+      setActualPrice(Math.floor(actualPrice -( discount * actualPrice)));
     } else {
       setCheck(false);
     }
