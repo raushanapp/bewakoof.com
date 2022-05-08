@@ -13,7 +13,9 @@ import { Signup } from './components/Home/Signup';
 import { Cart } from './components/Cart/Cart';
 import {Footer} from './components/Home/Footer'
 import PrivateRoute from './components/PrivateRoute';
-
+import Payment from './components/Cart/payment';
+import Otp from './components/Cart/otp';
+import Thanks from './components/Cart/thanks';
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,9 @@ function App() {
         {/* <Route path='/Home/cart' element={<Cart/>}></Route> */}
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/Cart/cart' element={<PrivateRoute><Cart/></PrivateRoute>}></Route>
+        <Route path='/Cart/payment' element={<Payment/>}></Route>
+        <Route path='/Cart/otp' element={<Otp/>}></Route>
+        <Route path='/Cart/thanks' element={<Thanks/>}></Route>
         <Route path='/Home/footer'  element={<Footer/>}></Route>
       </Routes>
     <Footer/>

@@ -57,7 +57,7 @@ export const CartItems = () => {
   return (
     <div className="cartItems">
       <div className="mainDiv">
-        <h2>{`My Bag:- ${count} items`}</h2>
+        <h2>{`My Bag`}</h2>
 
         <div className="yaydiv">
           <LocalShippingIcon

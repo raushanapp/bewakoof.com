@@ -30,7 +30,7 @@ export const CartTotal = () => {
   }
 
   const Proceed=()=>{
-    navigate("/Home/Men")
+    navigate("/Cart/payment")
   }
   console.log("redeem",redeem)
   const getUser = async () => {

@@ -1,8 +1,12 @@
 .Aslide1div{
     height: 500px;
     width: 500px;
-    background-color: red;
+    background-color: rgb(164, 140, 140);
     margin-left: 20px;
+    /* margin-top: 100px; */
+ 
+  
+    /* border: 1px solid red; */
 
 }
 

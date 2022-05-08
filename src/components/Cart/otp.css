@@ -1,0 +1,41 @@
+.otpcont{
+    height: 1000px;
+    width: 100%;
+    background-color: slategrey;
+    /* border: 1px solid red; */
+    }
+    
+    .mainchildcont{
+        height: 300px;
+        width: 280px;
+        /* border: 1px solid blue; */
+         margin: auto;
+         /* margin-top: 400px; */
+    
+    }
+    
+    .otpbox{
+        margin-top: 100px;
+    height: 40px;
+    width: 250px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    /* display: inline-block; */
+    
+    }
+    
+    .otpbutton{
+     height: 30px;
+     width: 90px;
+     background-color: rgb(50, 235, 235);
+     border-radius: 8px;
+     margin: auto;
+     
+     text-align: center;
+     justify-content: center;
+     margin-left: 34%;
+    }

@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./menslide.css"
 
+
 export const Menslide=()=>{
     const divnav=useNavigate()
     const hendleclick =()=>{
@@ -13,7 +14,7 @@ export const Menslide=()=>{
 divnav("./Home/Men")
     }
     return <>
- 
+
     <div onClick={hendleclick} className="slide1">
        < div className="slide1div" >
          <img src="https://images.bewakoof.com/uploads/grid/app/1x1-buy2fr599-m-1651329455.jpg" alt="Non" />

@@ -1,14 +1,22 @@
+
+.foruppermargin{
+  height: 50px;
+  
+}
+
 .Menshead {
     margin-left: 10%;
     /* border: 2px solid rgb(0, 38, 255); */
     width: 50%;
     text-decoration: underline rgb(247, 243, 9);
+    margin-top:0px;
   }
   .Mensmain {
     /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
     width: 100%;
+  
   }
   .Mensright {
     /* border: 2px solid rgb(255, 0, 170);  */

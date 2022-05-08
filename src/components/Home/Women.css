@@ -1,7 +1,13 @@
+
+.toaddmarginintop{
+    height: 50px;
+}
+
 .Womenshead{
     margin-left: 10%;
     /* border: 2px solid rgb(0, 38, 255); */
     width: 50%;
+    margin-top: 10px;
     text-decoration: underline rgb(247, 243, 9);
 }
 .Womensmain{

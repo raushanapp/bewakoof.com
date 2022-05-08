@@ -518,22 +518,37 @@
   ],
   "cart": [
     {
-      "product_id": "29",
-      "productimage_url": "https://images.bewakoof.com/t320/women-s-printed-long-kurti-dress-364700-1635869709-1.jpg",
-      "productprice": "499",
-      "productname": "Women's Printed Long Kurti Dress",
-      "productcancelprice": "1849",
-      "id": 7
+      "productimage_url": "https://images.bewakoof.com/t320/teal-solid-mandarin-neck-long-kurta-437157-1637244552-1.jpg",
+      "productprice": "799",
+      "productname": "Men's Solid Casual Long Kurta",
+      "productcancelprice": "1749",
+      "id": 1
     }
   ],
   "whishlist": [
+    {
+      "productimage_url": "https://images.bewakoof.com/t320/blue-solid-mandarin-neck-short-kurta-437151-1637246628-1.jpg",
+      "productprice": "599",
+      "productname": "Men's Solid Casual Short Kurta",
+      "productcancelprice": "1549",
+      "producttribe": "₹ 719 For TriBe Members",
+      "id": 1
+    },
+    {
+      "productimage_url": "https://images.bewakoof.com/t320/teal-solid-mandarin-neck-long-kurta-437157-1637244552-1.jpg",
+      "productprice": "799",
+      "productname": "Men's Solid Casual Long Kurta",
+      "productcancelprice": "1749",
+      "producttribe": "₹ 719 For TriBe Members",
+      "id": 2
+    },
     {
       "productimage_url": "https://images.bewakoof.com/t540/modern-noise-red-checks-shirts-427965-1636955546-1.jpg",
       "productprice": "699",
       "productname": "Black Full Sleeve Shirt",
       "productcancelprice": "1399",
       "producttribe": "₹ 719 For TriBe Members",
-      "id": 1
+      "id": 3
     }
   ]
 }

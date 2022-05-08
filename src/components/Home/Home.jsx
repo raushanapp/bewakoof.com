@@ -46,7 +46,7 @@ else if(asso ===true){
     return <>
 
    
-   
+   <div className="forgap"></div>
     <div className="homecompnavcss">
         <div  onClick={()=>changemen()} className="homecomplink">MEN</div>
         <div onClick={()=>changwo()} className="homecomplink">WOMEN</div>

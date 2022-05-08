@@ -54,6 +54,7 @@ export const Wishlist = () => {
   
 return (
 <>
+<div className="divfofnavbarwish"></div>
       <div className="whislistContainer">
         <h2 className="wishlisth2">Wishlist</h2>
         <div className="wishnew">
