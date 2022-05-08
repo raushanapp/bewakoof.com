@@ -2,9 +2,18 @@
     color: black;
     font-family: montserrat, sans-serif;
 } */
+.paymentcont{
+    border: 1px solid red;
+    background-color: #42a2a2;
+}
 
 .lower_box{
     background-color: #fddc6f;
+  
+}
+.forspaceinuppayment{
+    height: 100px;
+
 }
 
 .mainheadrow{
@@ -125,6 +134,7 @@ padding-top: 2px;
 
 .card_expiry_cvv {
     display: inline-block;
+    display: flex;
 }
 
 .card_expiry_cvv > input {

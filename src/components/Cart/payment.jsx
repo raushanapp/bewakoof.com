@@ -13,14 +13,14 @@ function Payment(){
     const Handleclick=()=>{
         console.log(getcard)
          
-        if(getcard.card_no && getcard.card_name && getcard.card_expiry && getcard.card_CVV ){
+        if(getcard.card_no && getcard.card_name && getcard.card_expiry && getcard.card_CVV && getcard.card_no .length===16 && getcard.card_CVV.length===3 && isNaN(getcard.card_no)===false ){
             //navigate
             navigarttootp("/Cart/otp")
 
             console.log("navigare to next")
         }
         else{
-            alert("Input box should not empty")
+            alert("Invalid Details")
         }
     }
 
@@ -42,7 +42,7 @@ function Payment(){
             <strong><span className="pay">  pay </span></strong> 
         </div> */}
 
-
+        <div className="forspaceinuppayment"></div>
         <div className="lower_box" >
             <div className="lower_box_left">
                 <div className="active">&nbsp; DEBIT/CREDIT CARD </div>

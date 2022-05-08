@@ -57,7 +57,13 @@ export const Signup = () => {
 
 
     return (
-        <div>
+        <>
+        <div className='forspaceinupside'></div>
+        <div className='signupcontflex'>
+            
+            <div className='img_divSignup'>
+                <img src="https://images.bewakoof.com/web/desktop-sign-up-banner--1623760676.png" width="320px" height="470px" alt="" />
+            </div>
             <div className="signup_box">
                 <div>
                     <h1>Sign Up</h1>
@@ -68,10 +74,11 @@ export const Signup = () => {
                     <TextField value={userData.email} name='email' onChange={handleChange} sx={{ width: '360px', height: '43px',padding: '5px 0px 0px', marginBottom: '15px'}} id="standard-basic" label="Email Id" variant="standard" />
                     <TextField value={userData.password} name='password' onChange={handleChange} sx={{ width: '360px', height: '43px',padding: '5px 0px 0px', marginBottom: '15px'}} id="standard-basic" type="password" label="Password" variant="standard" />
                     
-                    <Button onClick={handleSubmit} sx={{ width: "360px", height: "60px", fontFamily: "montserrat-bold, sans-serif",fontSize: "20px", padding: "6px", background: "#989898", marginTop: "15px" }}>Proceed</Button>
+                    <Button onClick={handleSubmit} sx={{ width: "360px", height: "60px", fontFamily: "montserrat-bold, sans-serif",fontSize: "20px", padding: "6px", background: "#0ba0a0", color:"white", marginTop: "15px" }}>Proceed</Button>
                 </div>
 
             </div>
         </div>
+        </>
     )
 }
