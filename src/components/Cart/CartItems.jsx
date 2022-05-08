@@ -8,14 +8,30 @@ export const CartItems = () => {
   
   
   const [cart ,setCart] = useState([])
+  const [actualPrice,setActualPrice]=useState(0)
+  const [strikedPrice,setStrikedPrice]=useState(0)
+  const [count,setCount]=useState(0)
 
   const getUser = async () => {
     const response = await fetch("http://localhost:8080/cart");
     const data = await response.json();
     setCart(data);
-    console.log(data);
+    console.log("cart", data)
+    var sum=0
+    var s=0
+    var counting=0
+    data.map((e)=>{
+      counting++
+      s=+ (e.productcancelprice)
+     console.log("s",s)
+     sum+=s
+    })
+    setCount(count+counting)
+    console.log("sum",sum)
+    setStrikedPrice(strikedPrice+sum)
+    console.log("striked",strikedPrice)
   };
-
+  
   useEffect(() => {
     getUser();
   }, []);
@@ -23,7 +39,7 @@ export const CartItems = () => {
   return (
     <div className="cartItems">
       <div className="mainDiv">
-        <h2>{`My Bag`}</h2>
+        <h2>{`My Bag:- ${count} items`}</h2>
 
         <div className="yaydiv">
           <LocalShippingIcon

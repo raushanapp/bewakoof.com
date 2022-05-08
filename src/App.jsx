@@ -12,7 +12,7 @@ import { Wishlist } from './components/Home/Wishlist';
 import { Signup } from './components/Home/Signup';
 import { Cart } from './components/Cart/Cart';
 import {Footer} from './components/Home/Footer'
-
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
         <Route path='/Home/women' element={<Women/>}></Route>
         <Route path='/Home/mobilecovers' element={<MobileCover/>}></Route>
         <Route path='/Home/login' element={<Login/>}></Route>
-        <Route path='/Home/wishlist' element={<Wishlist/>}></Route>
-        <Route path='/Home/cart' element={<Cart/>}></Route>
+        <Route path='/Home/wishlist' element={<PrivateRoute><Wishlist/></PrivateRoute>}></Route>
+        {/* <Route path='/Home/cart' element={<Cart/>}></Route> */}
         <Route path='/signup' element={<Signup/>}></Route>
-        <Route path='/Cart/cart' element={<Cart/>}></Route>
+        <Route path='/Cart/cart' element={<PrivateRoute><Cart/></PrivateRoute>}></Route>
         <Route path='/Home/footer'  element={<Footer/>}></Route>
       </Routes>
     <Footer/>

@@ -26,7 +26,9 @@ export const Women=()=>{
           product_id:e.id,
           productimage_url:e.image,
           productprice:e.price,
-          productname:e.name
+          productname:e.name,
+        
+          productcancelprice:e.canceledprice
         }
         axios.post(`http://localhost:8080/cart`,cartData);
         alert("id")
@@ -39,7 +41,8 @@ export const Women=()=>{
           product_id:e.id,
           productimage_url:e.image,
           productprice:e.price,
-          productname:e.name
+          productname:e.name,
+          productcancelprice:e.canceledprice
         }
         axios.post(`http://localhost:8080/whishlist`,WhislistData);
         alert("id")

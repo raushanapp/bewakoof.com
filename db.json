@@ -518,12 +518,28 @@
   ],
   "cart": [
     {
+      "product_id": "28",
+      "productimage_url": "https://images.bewakoof.com/t320/women-s-solid-v-neck-half-sleeve-red-casual-shirt-353228-1635869647-5.jpg",
+      "productprice": "399",
+      "productname": "Women's Solid V-Neck Half Sleeve Red Casual Shirt",
+      "productcancelprice": "1099",
+      "id": 1
+    },
+    {
+      "product_id": "29",
+      "productimage_url": "https://images.bewakoof.com/t320/women-s-printed-long-kurti-dress-364700-1635869709-1.jpg",
+      "productprice": "499",
+      "productname": "Women's Printed Long Kurti Dress",
+      "productcancelprice": "1849",
+      "id": 2
+    },
+    {
       "product_id": "1",
       "productimage_url": "https://images.bewakoof.com/t540/modern-noise-red-checks-shirts-427965-1636955546-1.jpg",
       "productprice": "699",
       "productname": "Black Full Sleeve Shirt",
       "productcancelprice": "1399",
-      "id": 1
+      "id": 3
     }
   ],
   "whishlist": [

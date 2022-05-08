@@ -19,7 +19,7 @@ return (
             <div className="original-price">{cart_price}</div>
             <div className="strikedoff-price">{cart_canclprice}</div>
           </div>
-          <div className="saved">You saved {`₹${324}!`}</div>
+          <div className="saved">You saved {`₹${Math.abs(cart_price-cart_canclprice)}!`}</div>
 
           <select name="" id="Size">
           <option value="">Size</option>
