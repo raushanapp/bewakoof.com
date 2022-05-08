@@ -15,11 +15,12 @@ export const Wishlist = () => {
   useEffect(() => {
     getUser();
   }, []);
-
+  
 return (
 <>
       <div className="whislistContainer">
         <h2 className="wishlisth2">Wishlist</h2>
+        <div className="wishnew">
         {wish.map((e,id)=>{
   return(
     <WishlistItems 
@@ -31,6 +32,7 @@ return (
     Wish_tribemember={e.producttribe}/>
     )
   })}
+  </div>
       </div>
     </>
   );
