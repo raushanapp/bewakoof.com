@@ -8,7 +8,7 @@ export const Wishlist = () => {
   const [wish ,setWish] = useState([])
 
   const getUser = async () => {
-    const response = await fetch("http://localhost:8080/whishlist");
+    const response = await fetch("https://backbewkoof.herokuapp.com/whishlist");
     const data = await response.json();
     setWish(data);
     console.log(data);
@@ -26,13 +26,13 @@ export const Wishlist = () => {
       productname: e.name,
       productcancelprice:e.canceledprice
     };
-    axios.post(`http://localhost:8080/cart/${id}`, cartData);
+    axios.post(`https://backbewkoof.herokuapp.com/cart/${id}`, cartData);
     alert("id");
     console.log(cartData);
   };
 
   function remove(id){
-    fetch(`http://localhost:8080/whishlist/${id}`,{
+    fetch(`https://backbewkoof.herokuapp.com/whishlist/${id}`,{
         method:'DELETE'
     })
     .then((res)=>{

@@ -9,7 +9,7 @@ export const Women=()=>{
     const [womens ,setWomens] = useState([])
 
     let getData = async()=>{
-        let response = await fetch("http://localhost:8080/womens")
+        let response = await fetch("https://backbewkoof.herokuapp.com/womens")
         let data = await response.json();
         setWomens(data)
         // console.log(data)
@@ -30,7 +30,7 @@ export const Women=()=>{
         
           productcancelprice:e.canceledprice
         }
-        axios.post(`http://localhost:8080/cart`,cartData);
+        axios.post(`https://backbewkoof.herokuapp.com/cart`,cartData);
         // alert("id")
         console.log(cartData);
       }
@@ -44,7 +44,7 @@ export const Women=()=>{
           productname:e.name,
           productcancelprice:e.canceledprice
         }
-        axios.post(`http://localhost:8080/whishlist`,WhislistData);
+        axios.post(`https://backbewkoof.herokuapp.com/whishlist`,WhislistData);
         // alert("id")
         console.log(WhislistData);
       }

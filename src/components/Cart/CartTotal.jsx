@@ -32,7 +32,7 @@ export const CartTotal = () => {
   };
   console.log("redeem", redeem);
   const getUser = async () => {
-    const response = await fetch("http://localhost:8080/cart");
+    const response = await fetch("https://backbewkoof.herokuapp.com/cart");
     const data = await response.json();
     setCartData(data);
     // console.log("cart", data);

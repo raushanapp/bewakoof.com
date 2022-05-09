@@ -14,7 +14,7 @@ export const CartItems = () => {
   const [count,setCount]=useState(0)
 
   const getUser = async () => {
-    const response = await fetch("http://localhost:8080/cart");
+    const response = await fetch("https://backbewkoof.herokuapp.com/cart");
     const data = await response.json();
     setCart(data);
     console.log("cart", data)
@@ -39,7 +39,7 @@ export const CartItems = () => {
 
 
   function remove(id) {
-    fetch(`http://localhost:8080/cart/${id}`, {
+    fetch(`https://backbewkoof.herokuapp.com/cart/${id}`, {
       method: "DELETE",
     })
       .then((res) => {
